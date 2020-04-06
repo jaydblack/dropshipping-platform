@@ -1,0 +1,6 @@
+App\Entity\Product:
+    properties:
+        color:
+            - Choice: 
+                callback: [App\Utils\ColorResolver, getColors]
+                groups: [app_product]
