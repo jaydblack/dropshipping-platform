@@ -425,9 +425,6 @@
             "ref": "c276fa48d4713de91eb410289b3b1834acb7e403"
         }
     },
-    "phpunit/phpunit-mock-objects": {
-        "version": "5.0.10"
-    },
     "polishsymfonycommunity/symfony-mocker-container": {
         "version": "v1.0.2"
     },
@@ -695,6 +692,21 @@
     "symfony/options-resolver": {
         "version": "v4.1.3"
     },
+    "symfony/phpunit-bridge": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "6d0e35f749d5f4bfe1f011762875275cd3f9874f"
+        },
+        "files": [
+            ".env.test",
+            "bin/phpunit",
+            "phpunit.xml.dist",
+            "tests/bootstrap.php"
+        ]
+    },
     "symfony/polyfill-ctype": {
         "version": "v1.9.0"
     },
@@ -766,6 +778,9 @@
     },
     "symfony/templating": {
         "version": "v4.1.3"
+    },
+    "symfony/test-pack": {
+        "version": "v1.0.6"
     },
     "symfony/thanks": {
         "version": "v1.0.8"
