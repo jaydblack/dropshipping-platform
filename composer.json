@@ -16,6 +16,7 @@
     ],
     "require": {
         "php": "^7.2",
+        "dts/ebay-sdk-php": "^18.0",
         "sylius/sylius": "~1.6.0",
         "symfony/dotenv": "^4.3",
         "symfony/flex": "^1.2"

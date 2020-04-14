@@ -119,6 +119,9 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "dts/ebay-sdk-php": {
+        "version": "18.0.0"
+    },
     "egulias/email-validator": {
         "version": "2.1.5"
     },
