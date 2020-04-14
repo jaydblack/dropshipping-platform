@@ -1,0 +1,2 @@
+parameters:
+    EBAY_CREDENTIALS: '%env(resolve:EBAY_CREDENTIALS)%'
