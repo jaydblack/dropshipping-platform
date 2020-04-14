@@ -40,7 +40,7 @@ jobs:
 
             install:
                 - if [ ! -z "${SYMFONY_VERSION}" ]; then bin/require-symfony-version composer.json "${SYMFONY_VERSION}"; fi
-                - composer update --no-interaction --prefer-dist
+                - composer install
                 - yarn install
 
             before_script:
