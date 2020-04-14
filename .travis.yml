@@ -3,7 +3,7 @@ language: php
 dist: trusty
 
 php:
-    - 7.2
+    - 7.3
 
 env:
     global:
@@ -55,9 +55,6 @@ jobs:
                 - docker-compose exec php bin/console sylius:fixtures:load --no-interaction
 
                 - curl http://localhost/
-
-            before_deploy:
-                - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin "$DOCKER_REGISTRY"
 
             deploy:
                 provider: script
