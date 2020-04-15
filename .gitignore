@@ -3,6 +3,7 @@
 /public/js
 /public/media
 !/public/media/image/.gitkeep
+/public/build
 
 /node_modules
 
@@ -42,3 +43,5 @@
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
+
+yarn-error.log
