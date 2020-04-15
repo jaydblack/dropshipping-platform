@@ -6,11 +6,13 @@ namespace App\Utils;
 
 class ColorResolver
 {
-    const BLUE = 'blue';
-    const GREEN = 'green';
-    const RED = 'red';
+    public const BLUE = 'blue';
 
-    const COLORS = [
+    public const GREEN = 'green';
+
+    public const RED = 'red';
+
+    public const COLORS = [
         self::BLUE,
         self::GREEN,
         self::RED,
