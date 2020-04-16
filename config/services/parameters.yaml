@@ -1,0 +1,4 @@
+parameters:
+    BIG_BUY_API_KEY: '%env(resolve:BIG_BUY_API_KEY)%'
+    BIG_BUY_ENDPOINT: '%env(resolve:BIG_BUY_ENDPOINT)%'
+    BIG_BUY_LIMIT: '%env(resolve:BIG_BUY_LIMIT)%'
