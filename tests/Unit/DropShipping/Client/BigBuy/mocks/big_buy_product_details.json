@@ -1,0 +1,138 @@
+{
+  "manufacturer": 1212,
+  "id": 15647,
+  "sku": "V1300179",
+  "ean13": "7569000732739",
+  "weight": 0.255,
+  "height": 4,
+  "width": 6.5,
+  "depth": 23,
+  "dateUpd": "2016-08-22 06:26:54",
+  "category": 2607,
+  "categories": [
+    {
+      "id": 2570,
+      "product": 15647,
+      "category": 2570,
+      "position": 2
+    },
+    {
+      "id": 2584,
+      "product": 15647,
+      "category": 2584,
+      "position": 3
+    },
+    {
+      "id": 2590,
+      "product": 15647,
+      "category": 2590,
+      "position": 4
+    },
+    {
+      "id": 2571,
+      "product": 15647,
+      "category": 2571,
+      "position": 5
+    },
+    {
+      "id": 2593,
+      "product": 15647,
+      "category": 2593,
+      "position": 6
+    },
+    {
+      "id": 2607,
+      "product": 15647,
+      "category": 2607,
+      "position": 7
+    },
+    {
+      "id": 2662,
+      "product": 15647,
+      "category": 2662,
+      "position": 8
+    },
+    {
+      "id": 2669,
+      "product": 15647,
+      "category": 2669,
+      "position": 9
+    }
+  ],
+  "dateUpdDescription": "2016-08-21 21:52:51",
+  "dateUpdImages": null,
+  "dateUpdStock": "2016-08-17 13:04:50",
+  "wholesalePrice": 5.39,
+  "retailPrice": 10.72,
+  "dateAdd": "2016-08-19 12:56:24",
+  "video": "",
+  "active": 1,
+  "images": {
+    "id": 15647,
+    "images": [
+      {
+        "id": 101280,
+        "isCover": true,
+        "name": "V1300179_101280",
+        "url": "https://cdnbigbuy.com/images/V1300179_101280.jpg"
+      },
+      {
+        "id": 101279,
+        "isCover": false,
+        "name": "V1300179_101279",
+        "url": "https://cdnbigbuy.com/images/V1300179_101279.jpg"
+      },
+      {
+        "id": 101278,
+        "isCover": false,
+        "name": "V1300179_101278",
+        "url": "https://cdnbigbuy.com/images/V1300179_101278.jpg"
+      },
+      {
+        "id": 101277,
+        "isCover": false,
+        "name": "V1300179_101277",
+        "url": "https://cdnbigbuy.com/images/V1300179_101277.jpg"
+      },
+      {
+        "id": 101281,
+        "isCover": false,
+        "name": "V1300179_101281",
+        "url": "https://cdnbigbuy.com/images/V1300179_101281.jpg"
+      }
+    ]
+  },
+  "attributes": null,
+  "tags": [
+    {
+      "id": "16",
+      "tag": [],
+      "sku": null
+    },
+    {
+      "id": "18",
+      "tag": [],
+      "sku": null
+    },
+    {
+      "id": "25",
+      "tag": [],
+      "sku": null
+    },
+    {
+      "id": "34",
+      "tag": [],
+      "sku": null
+    },
+    {
+      "id": "38",
+      "tag": [],
+      "sku": null
+    }
+  ],
+  "taxRate": 21,
+  "taxId": 1,
+  "dateUpdProperties": null,
+  "dateUpdCategories": null,
+  "inShopsPrice": 24.5
+}
