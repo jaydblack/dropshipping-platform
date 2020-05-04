@@ -3,6 +3,7 @@
 imports:
     - { resource: services/form_extensions.yaml }
     - { resource: services/form_types.yaml }
+    - { resource: services/menu.yaml }
 
 parameters:
     locale: en_US
