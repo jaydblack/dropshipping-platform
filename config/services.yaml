@@ -4,6 +4,8 @@ imports:
     - { resource: services/form_extensions.yaml }
     - { resource: services/form_types.yaml }
     - { resource: services/menu.yaml }
+    - { resource: services/state_machine.yaml }
+    - { resource: services/email_manager.yaml }
 
 parameters:
     locale: en_US

@@ -1,0 +1,8 @@
+winzou_state_machine:
+    sylius_order:
+        callbacks:
+            after:
+                send_order_notification:
+                    on: ['create']
+                    do: ['@app.email_manager.order_notification', 'notify']
+                    args: ['object']

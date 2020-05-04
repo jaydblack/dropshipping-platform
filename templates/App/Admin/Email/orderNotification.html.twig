@@ -1,0 +1,9 @@
+{% block subject %}
+    Notification
+{% endblock %}
+
+{% block body %}
+    {% autoescape %}
+        New order appeared in the shop with {{ order.number }}
+    {% endautoescape %}
+{% endblock %}
