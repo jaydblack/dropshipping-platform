@@ -17,7 +17,46 @@ sylius_product:
             translation:
                 classes:
                     model: Sylius\Component\Core\Model\ProductTranslation
+                    
+sylius_resource:
+    drivers:
+        - doctrine/orm
+    resources:
+        app.supplier:
+            driver: doctrine/orm # You can use also different driver here
+            classes:
+                model: App\Entity\Supplier
+                form: App\Form\Type\SupplierType
 
+sylius_grid:
+    grids:
+        app_admin_supplier:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: App\Entity\Supplier
+            fields:
+                name:
+                    type: string
+                    label: sylius.ui.name
+                description:
+                    type: string
+                    label: sylius.ui.description
+                enabled:
+                    type: twig
+                    label: sylius.ui.enabled
+                    options:
+                        template: "@SyliusUi/Grid/Field/enabled.html.twig"
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete
+                        
 sylius_shop:
     product_grid:
         include_all_descendants: true

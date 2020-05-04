@@ -1,0 +1,4 @@
+services:
+    app.form.type.supplier:
+        class: App\Form\Type\SupplierType
+        arguments: ['%app.model.supplier.class%']
