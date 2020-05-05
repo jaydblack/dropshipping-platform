@@ -9,7 +9,7 @@ use Sylius\Component\Core\Model\ChannelInterface;
 use Sylius\Component\Core\Model\OrderInterface;
 use Sylius\Component\Mailer\Sender\SenderInterface;
 
-class OrderNotificationEmailManager
+class OrderNotificationEmailManager implements OrderNotificationEmailManagerInterface
 {
     /** @var SenderInterface */
     private $sender;
