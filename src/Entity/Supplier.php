@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
-use Sylius\Component\Resource\Model\ResourceInterface;
-
-class Supplier implements ResourceInterface
+class Supplier implements SupplierInterface
 {
     /** @var int */
     protected $id;

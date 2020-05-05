@@ -4,23 +4,25 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Sylius\Component\Core\Model\Product as BaseProduct;
-use Sylius\Component\Core\Model\ProductTranslation;
-use Sylius\Component\Product\Model\ProductTranslationInterface;
 
-/**
- * @ORM\Entity
- * @ORM\Table(name="sylius_product")
- */
-class Product extends BaseProduct
+class Product extends BaseProduct implements ProductInterface
 {
-    protected function createTranslation(): ProductTranslationInterface
-    {
-        return new ProductTranslation();
-    }
-
     protected $color;
+
+    /** @var SupplierInterface[] */
+    protected $suppliers;
+
+    /** @var string $externalId */
+    protected $externalId;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->suppliers = new ArrayCollection();
+    }
 
     public function getColor(): ?string
     {
@@ -30,5 +32,35 @@ class Product extends BaseProduct
     public function setColor(string $color): void
     {
         $this->color = $color;
+    }
+
+    public function getSuppliers(): Collection
+    {
+        return $this->suppliers;
+    }
+
+    public function addSupplier(SupplierInterface $supplier): void
+    {
+        if (!$this->hasSupplier($supplier)) {
+            $this->suppliers->add($supplier);
+            $supplier->setProduct($this);
+        }
+    }
+
+    public function removeSupplier(SupplierInterface $Supplier): void
+    {
+        if ($this->hasSupplier($Supplier)) {
+            $this->suppliers->removeElement($Supplier);
+        }
+    }
+
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
+    public function setExternalId(string $externalId): void
+    {
+        $this->externalId = $externalId;
     }
 }
