@@ -4,6 +4,8 @@ services:
   php:
     build:
       context: .
+      args:
+          - WITH_XDEBUG=${WITH_XDEBUG:-0}
       target: sylius_php
       cache_from:
         - quay.io/sylius/php:latest

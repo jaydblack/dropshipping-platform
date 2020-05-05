@@ -60,6 +60,11 @@ RUN set -eux; \
 	\
 	apk del .build-deps
 
+ARG XDEBUG_VERSION=2.9.5
+
+RUN  pecl install xdebug; \
+     docker-php-ext-enable xdebug
+
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY docker/php/php.ini /usr/local/etc/php/php.ini
 COPY docker/php/php-cli.ini /usr/local/etc/php/php-cli.ini
