@@ -1,0 +1,8 @@
+services:
+    app.order_processing.order_erp_pricing:
+        class: App\OrderProcessing\OrderErpPricingProcessor
+        arguments:
+            - '@monolog.logger'
+            - '@event_dispatcher'
+        tags:
+            - { name: 'sylius.order_processor', priority: 70 }
